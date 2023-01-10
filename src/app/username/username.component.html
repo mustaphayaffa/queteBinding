@@ -1,0 +1,12 @@
+<p>
+     <img [src]="user.imageSrc" alt="photo" />
+</p>
+<!-- <button (click)="sayHello()">Dire Bonjour</button> -->
+
+
+<p>{{user.firstName}}</p> 
+<p>{{user.name}}</p>
+<p *ngIf="displayButton">{{user.age}}</p>
+
+<button (click)="displayButton=!displayButton">masquer mon age</button>
+
